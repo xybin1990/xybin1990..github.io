@@ -19,6 +19,10 @@
         <% var post_url = url_for(post.path)%>
         <article class="index-card-info">
           <h3 class="index-header">
+            <% if (post.top) { %>
+              <i class="fa fa-thumb-tack"></i>
+              <font color=7D26CD>[置顶]</font>
+            <% } %>
             <a href="<%- post_url %>">
             <% if (theme.index.post_sticky && theme.index.post_sticky.enable && post.sticky > 0) { %>
               <span class="index-pin"><%= theme.index.post_sticky.text %></span>
