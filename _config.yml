@@ -4,7 +4,7 @@
 
 # Site
 title: 我是一个灯
-subtitle: '这里有导航'
+# subtitle: '这里有导航'
 description: '应该有点描述'
 keywords: ['我', 'Nic']
 author: Nic
@@ -62,7 +62,7 @@ prismjs:                         # 浏览器端高亮
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: '2023/05/26/navigation'
   per_page: 10
   order_by: -date
 
@@ -99,7 +99,8 @@ ignore:
 # 扩展
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape        # 当前主题名称。值为false时禁用主题
+theme: miracle          # 当前主题名称。值为false时禁用主题
+lang: zh-CN
 # theme_config          # 主题的配置文件。在这里放置的配置会覆盖主题目录下的 _config.yml 中的配置
 
 # 部署部分的设置
