@@ -9,7 +9,7 @@ githubUrl=https://xybin1990:${GITHUB_TOKEN}@github.com/xybin1990/xybin1990.githu
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl main:gh-pages # 推送到github
+git push -f $githubUrl master:gh-pages # 推送到github
 
 cd -
 rm -rf public
