@@ -15,7 +15,8 @@ jobs:
       - run: git config --global user.email "xybin1990@163.com"
       - run: git config --global user.name "xybin1990"
       - run: npm ci
-      - run: npm run build && npm run deploy
+      - run: npm run build
+      - run: sh .github/workflows/deploy.sh
         env:
           GITHUB_TOKEN: ${{secrets.ACCESS_TOKEN}}
 
