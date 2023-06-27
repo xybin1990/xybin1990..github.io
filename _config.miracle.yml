@@ -13,7 +13,7 @@ global:
 
     # 用于浏览器标签的图标
     # Icon for browser tab
-    favicon:
+    favicon: favicon.ico
 
     # 用于苹果设备的图标
     # Icon for Apple touch
@@ -93,6 +93,7 @@ global:
         date:
             - "7-8"
             - "12-13"
+            - "9-18"
 
 
 # 搜索
