@@ -21,8 +21,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-      - run: git config --global user.email "$CC.pusher.email"
-      - run: git config --global user.name "$CC.pusher.name"
+      - run: git config --global user.email ${{github.event.pusher.email}}
+      - run: git config --global user.name ${{github.event.pusher.name}}
       - run: npm ci
       - run: npm run build
       - run: sh .github/workflows/deploy.sh
