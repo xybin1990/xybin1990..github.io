@@ -86,7 +86,7 @@ global:
     # 哀悼模式，网页黑白
     # Mourning mode, web page black and white
     memorial:
-        enable: false
+        enable: true
         # 日期, (M-D)
         # Date, (M-D)
         # eg: 7-8, 9-30, 12-1, 12-30 ...
