@@ -3,6 +3,9 @@ name: 'GitHub Actions build and deploy github pages'
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - README.md # 忽略
+      - scaffolds
 
 jobs:
   build-and-deploy:
