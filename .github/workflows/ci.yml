@@ -11,6 +11,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: "Log"
+        env:
+          CC: ${{ toJSON(github) }}
+        run: echo "$CC"
+
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -23,5 +28,3 @@ jobs:
       - run: sh .github/workflows/deploy.sh
         env:
           GITHUB_TOKEN: ${{secrets.ACCESS_TOKEN}}
-          CC: ${{ toJSON(github) }}
-
