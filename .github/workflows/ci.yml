@@ -15,8 +15,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-      - run: git config --global user.email "xybin1990@163.com"
-      - run: git config --global user.name "xybin1990"
+      - run: git config --global user.email ${{ secrets.MY_USER_EMAIL }}
+      - run: git config --global user.name ${{ secrets.MY_USER_NAME }}
       - run: npm ci
       - run: npm run build
       - run: sh .github/workflows/deploy.sh
