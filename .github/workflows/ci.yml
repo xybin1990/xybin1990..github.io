@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
-      - run: echo ${{ toJSON(github) }}
+      - run: echo "$CC"
       - run: git config --global user.email ${{ secrets.MY_USER_EMAIL }}
       - run: git config --global user.name ${{ secrets.MY_USER_NAME }}
       - run: npm ci
@@ -23,4 +23,5 @@ jobs:
       - run: sh .github/workflows/deploy.sh
         env:
           GITHUB_TOKEN: ${{secrets.ACCESS_TOKEN}}
+          CC: ${{ toJSON(github) }}
 
