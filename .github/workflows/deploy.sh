@@ -8,7 +8,7 @@ echo "[pwd]"
 pwd
 
 msg='来自github action的自动部署'
-githubUrl=https://xybin1990:${GITHUB_TOKEN}@github.com/xybin1990/xybin1990.github.io.git
+githubUrl=https://xieyuanbin1:${GITHUB_TOKEN}@github.com/xieyuanbin1/xieyuanbin1.github.io.git
 
 git init
 echo "[branch]"
